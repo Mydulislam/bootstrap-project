@@ -1,0 +1,399 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*========================== navigation styling =============================*/
+#nav_bar{
+ position: sticky;
+ top:0;
+ z-index: 10;
+}
+.navbar-nav{
+
+}
+.navbar-nav li{
+    padding:0 10px;
+}
+.navbar-nav li a{
+    float:right;
+    text-align: left;
+}
+#nav_bar li a:hover{
+    color:#007bff!important;
+}
+.navbar{
+    background:#fff;
+}
+.navbar-toggler{
+    border:none;
+}
+.nav-link{
+    color:#555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*========================== Carousal/Slider styling =============================*/
+#slider{
+    width: 100%;
+}
+.carousel-item img{
+    height:500px;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+.carousel-caption h5{
+    color:#fff;
+    font-size: 42px;
+}
+
+/*========================== About styling =============================*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+}
+#about button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content{
+    padding-top: 20px;
+}
+.skills-bar{}
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress{
+    border-radius: 16px;
+    margin-bottom:20px
+}
+.progress-bar{
+    border-radius: 16px;
+}
+
+/*========================== Services styling =============================*/
+
+#services{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/bg222.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1{
+    text-align: center;
+    color:#efefef;
+    padding-top: 10px;
+}
+#services h1::after{
+    content: "";
+    background:#efefef;
+    display:block;
+    height:3px;
+    width:170px;
+    margin:20px auto 5px;
+}
+.services{
+    margin-top: 40px;
+}
+.services .icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#services p{
+    margin-top: 20px;
+    font-size: 14px;
+    color:#ccc;
+}
+.services .col-md-3{
+    transition: all 0.7s ease;
+    border-radius:6px;
+}
+.services .col-md-3:hover{
+    background:#007bff;
+    cursor:pointer;
+    
+}
+
+/*========================== Team styling =============================*/
+#team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#555;
+}
+#team h1, #testimonials h1, #prices h1{
+    color:#555;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#team h1::after, #testimonials h1::after, #prices h1::after{
+    content:"";
+    background:#007bff;
+    display:block;
+    width:170px;
+    height:3px;
+    margin:20px auto 5px;
+}
+.profile-pic{
+    margin-top: 25px;
+}
+.profile-pic .img-box{
+    opacity:1;
+    display:block;
+    position: relative;
+}
+.profile-pic .img-box img{
+    filter: grayscale(1);
+    width:100%;
+    border-radius: 6px;
+    transition:all 0.7s ease;
+}
+.profile-pic .img-box img:hover{
+    filter: grayscale(0);
+    cursor:pointer;
+    
+}
+.profile-pic .img-box ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    position:absolute;
+    z-index: 2;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.profile-pic .img-box:hover ul{
+    opacity: 1;
+}
+.profile-pic .img-box ul li{
+    display: inline-block;
+    padding:5px;
+}
+.profile-pic .img-box ul li a{
+    text-decoration: none;
+    display:block;
+}
+.profile-pic .img-box ul li a .fab{
+    width:25px;
+    height:25px;
+    color:#007bff;
+    background:#fff;
+    padding:4px;
+    border-radius:50%;
+}
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color:#007bff;
+}
+.profile-pic h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/*========================== Promo styling =============================*/
+#promo{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/bg33.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding:100px 0;
+    font-size: 38px;
+}
+
+/*========================== Price Plans styling =============================*/
+#prices{
+    padding:40px 0;
+    background:#efefef;
+}
+.single-price{
+    margin: 10px auto;
+    background-color: #fff;
+    transition:all 0.5s ease;
+}
+.single-price:hover{
+    box-shadow: 0 2px 20px #333;
+}
+.price-head{
+    background-color:#2196f3;
+    padding: 10PX 5PX;
+    text-align: center;
+}
+.price-head h2{
+    color:#fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding:5px;
+    text-transform: uppercase;
+}
+.price-head p{
+    font-size: 25px;
+    color:#ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+.price-head p span{
+    font-size: 15px;
+}
+.single-price .price-content{
+    padding:0 15px;
+}
+.single-price .price-content ul{
+    list-style: none;
+}
+.single-price .price-content ul li{
+    padding:15px 10px;
+    border-bottom:1px solid #efefef;
+}
+.single-price .price-content ul li:last-child{border:none}
+.single-price .price-content ul li .fa-check-circle{
+    color:green;
+    margin-right:10px;
+    font-size: 20px;
+}
+.single-price .price-content ul li .fa-times-circle{
+    color:red;
+    margin-right:10px;
+    font-size: 20px;
+}
+.single-price .price-button{
+    padding: 15px 15px 30px;
+    text-align: center
+}
+.single-price .price-button .buy-btn{
+    background-color: #2196f3;
+    border-radius: 3px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 50px;
+    transition: all 0.5s ease;
+    color:#fff;
+}
+.single-price .price-button .buy-btn:hover{
+    border:1px solid #fff;
+    background:#3f51b5;
+}
+/*========================== Testimonials styling =============================*/
+#testimonials{
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+#testimonials .row{
+    margin-top:30px;
+}
+#testimonials .row .col-md-4{
+    margin:40px auto;
+}
+#testimonials .row .col-md-4 .profil-img{
+    padding:70px 10px 10px;
+    background-color:#efefef;
+}
+#testimonials .row .col-md-4 .profil-img:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+#testimonials .row .col-md-4 .profil-img img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    top:-60px;
+    position:absolute;
+    left:calc(50% - 60px);
+    border:10px solid #fff;
+}
+#testimonials .row .col-md-4 .profil-img blockquote{
+    font-size: 16px;
+    line-height: 30px;
+}
+#testimonials .row .col-md-4 .profil-img blockquote::before{
+    content: '\93';
+    font-size: 50px;
+    color:#007bff;
+    position:relative;
+    line-height: 20px;
+    bottom:-15px;
+    right:5px;
+}
+#testimonials .row .col-md-4 .profil-img blockquote::after{
+    content: '\94';
+    font-size: 50px;
+    color:#007bff;
+    position:relative;
+    line-height: 10px;
+    bottom:-15px;
+    left:5px;
+}
+#testimonials .row .col-md-4 .profil-img h3{
+    font-size: 20px;
+    margin-top: 15px;
+    color:#007bff;
+}
+#testimonials .row .col-md-4 .profil-img h3 span{
+    font-size: 12px;
+    color:#333;
+}
+
+/*========================== Contact / Get in touch styling =============================*/
+#contact{
+    background:#efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:#777;
+}
+#contact .contact-form{
+    padding:15px;
+}
+#contact .contact-form .form-group{}
+#contact .contact-form .form-group .form-control{
+    border-radius:0;
+    border:none;
+}
+::placeholder{
+    color:#999;
+}
+.follow{
+    background:#fff;
+    padding:10px;
+    margin:15px 0;
+}
+.contact-info{}
+.contact-info .fas, .fab{
+    margin:10px;
+    color:#007bff;
+    font-weight: bold;
+}
+
+/*========================== Footer styling =============================*/
+#footer-part{
+    background:#333;
+    color:#fff;
+    padding:12px;
+}
+#footer-part .fa-heart{
+    margin:3px;
+    color:red;
+}
